@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brasil Calçados</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <img class="header-logo" src="/assets/logo.png " width="100px" height="100px" alt="page logo" />
+      <div class="header-menu">
+        <img onclick="modal.open()" class="icon-menu" src="/assets/icon.svg" width="32px" height="32px" alt="icon menu" />
+        <nav class="header-menu-items">
+            <a href="#" class="header-menu-item">Home</a>
+            <a href="#" class="header-menu-item">More</a>
+            <a href="#" class="header-menu-item">Serviçes</a>
+            <a href="#contato" class="header-menu-item">Contato</a>
+            <p onclick="modal.close()" class="exit header-menu-item">Sair</p>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="content-main">
+        <img class="content-image-main" src="/assets/produto1.png" alt="content image main" />
+        <div class="content-main-text">
+          <h3 class="content-main-text-title">Mizuno Cool Ride</h3>
+          <p class="content-main-text-paragraph">
+           <strong>Explore o Mundo com Estilo e Conforto com os Tênis Mizuno</strong> Os tênis Mizuno são projetados com a mais avançada tecnologia esportiva,
+            destinada a aprimorar sua experiência atlética. Com amortecimento de alta qualidade, solas aderentes e materiais respiráveis,
+            cada par é uma obra-prima da engenharia esportiva. Essa dedicação à inovação garante que você tenha o suporte e a confiança
+            necessários para dominar qualquer atividade, desde corridas de rua até competições no campo.
+          </p>
+          <p class="content-main-text-paragraph">
+            Nossos tênis são projetados tendo em mente o conforto de seus pés. As palmilhas acolchoadas
+            e o ajuste preciso garantem que você possa usá-los o dia todo sem sentir qualquer desconforto.
+            Com Mizuno nos pés, você estará preparado para enfrentar qualquer desafio que a vida lhe apresentar,
+            sem comprometer o conforto.
+          </p>
+        </div>
+      </section>
+
+      <div class="container-form">
+        <h2>Formulário de Contato</h2>
+        <form action="#" method="post" id="contato">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
+    </main>
+
+    <footer class="footer">
+        <h1 class="title-footer"> B R A S I L</h1>
+        <h1 class="title-footer"> C A L Ç A D O S</h1>
+    </footer>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
